@@ -5,3 +5,8 @@
 .half-width {
   width : 50%
 }
+
+.half-width span {
+  font-size: 25px;
+  padding: 0 30px;
+}
