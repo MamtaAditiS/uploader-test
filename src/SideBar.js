@@ -3,13 +3,13 @@ import UploadModal from './UploadModal.js'
 import Dropzone from 'react-dropzone'
 
 const SideBar = (props) => {
-    return (<div className='col-12'>
+    return (<div className='sidebar'>
         <UploadBlock openModal={props.openModal} saveDocument={props.saveDocument} />
         <div className="col-12">
-            <ul className={'list-document active'}>
+            <ul className={'list-document'}>
                 {props.files && props.files.length > 0 ?
                     props.files.map((file, index) =>
-                        <li
+                        <li className={props.selected === index ? 'list-item active' : 'list-item'}
                             key={index}
                             onClick={() =>
                                 props.getFileIndex(index)

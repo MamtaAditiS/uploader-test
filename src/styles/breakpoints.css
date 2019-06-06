@@ -1,0 +1,22 @@
+
+/* Media Queries (Responsive View) Start */
+@media (min-width: 600px) {
+    .cus-block{
+        min-height: 64px;
+    }
+}
+   
+
+@media (min-width: 600px){
+    .list-document li{
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+@media(max-width : 768px){
+    .doc-view {
+        width: 100% !important;
+    }
+}
+

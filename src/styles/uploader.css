@@ -6,6 +6,10 @@
     float: left;
 }
 
+.sidebar .upload-img {
+    text-align: right;
+}
+
 .upload-img img{
         height: 40px;
         text-align : right;     
@@ -15,9 +19,12 @@
     width: 100%;
     display: inline-block;
     margin: 0 20px;
+    padding: 10px 15px;
+    border-bottom: 1px solid #000;
 }
 .cus-block .col-6 {
     float: left;
+    
 }
 .col-6 span {
     font-size:  30px;
@@ -30,8 +37,11 @@
 .doc-view  {
     width: 66.66%; 
     float: right;
-    position: relative;
     display: inline-block;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
 }
 
 .custom-width {
@@ -49,7 +59,11 @@
 }
 
 .document-window img {
-    height: 100%;
-    width: inherit;
+    height: 500px;
+    max-width: 800px;
+}
+
+.sidebar {
+    width : 100%;
 }
 

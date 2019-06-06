@@ -13,17 +13,22 @@
 }
 
 .list-document {
+  flex: 1 1 auto;
+  margin: 0;
+  padding: 0;
+  position: relative;
   list-style: none;
-  
 }
 
-.list-document li {
-  height : 50px; 
+.list-item {
+  height : 25px; 
   width: inherit;
+  font-weight: 400;
+  margin: 20px;
 }
 
-.list-document li active{
+.list-item .active{
   height : 50px; 
   width: inherit;
-  background:  gray;
+  background: #80808024;
 }
