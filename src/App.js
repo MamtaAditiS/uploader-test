@@ -7,18 +7,26 @@ import { saveFile , getFile } from "./utils";
 
 
 class App extends React.Component {
+
+  openUploader = () => {
+    console.log('entered ', this.refs.dropzone)
+		let dropzone = this.refs.dropzone;
+		dropzone.open();
+	}
   render () {
+    console.log(this.refs.dropzone , Dropzone,"ref")
     return (
       <div className="App">
         <header className="App-header">
-          <SideBar open={this.uploadFile}/>
-          <Dropzone 
-            ref='dropzone'
-            onDrop={ (files) =>  {
-              console.log(files)
-              saveFile('file', files[0])
-            }}
-          />
+          <SideBar open={this.openUploader}/>
+
+          <Dropzone ref='dropzone' onDrop={acceptedFiles => console.log(acceptedFiles)}>
+            {({getRootProps}) => (
+              <div {...getRootProps()}>
+                <p>Drop files here, or click to select files</p>
+              </div>
+            )}
+          </Dropzone>
         </header>
       </div>
     );
