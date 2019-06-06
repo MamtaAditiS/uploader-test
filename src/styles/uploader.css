@@ -1,5 +1,8 @@
+.full-width {
+    width: 100%;
+}
+
 .upload-img {
-    width:  50%;
     float: left;
 }
 
@@ -7,8 +10,6 @@
         height: 40px;
         text-align : right;     
     }
-  
-
 
 .cus-block {
     width: 100%;
@@ -21,8 +22,16 @@
 .col-6 span {
     font-size:  30px;
 }
-.main .col-8 {
+.doc-sidebar {
+    width: 33.33%;
+    float: left;
+}
+
+.doc-view  {
+    width: 66.66%; 
     float: right;
+    position: relative;
+    display: inline-block;
 }
 
 .custom-width {

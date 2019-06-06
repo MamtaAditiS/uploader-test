@@ -6,14 +6,15 @@ const SideBar = (props) => {
     return (<div className='col-12'>
         <UploadBlock openModal={props.openModal} saveDocument={props.saveDocument} />
         <div className="col-12">
-            <ul>
+            <ul className={'list-document active'}>
                 {props.files && props.files.length > 0 ?
                     props.files.map((file, index) =>
-                        <li key={index}
+                        <li
+                            key={index}
                             onClick={() =>
                                 props.getFileIndex(index)
                             }>
-                            {file.name}</li>)
+                            #{file.name}</li>)
                     : null}
             </ul>
         </div>
@@ -28,6 +29,7 @@ const UploadBlock = (props) => {
         <div className="col-6" > <span>Files</span> </div>
         <div className="upload-img">
             <Dropzone
+                accept="image/*"
                 multiple={false}
                 onDrop={acceptedFiles => props.saveDocument(acceptedFiles)}>
                 {({ getRootProps, getInputProps }) => (

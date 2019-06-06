@@ -2,6 +2,7 @@
 @import './styles/modal.css';
 @import './App.css';
 
+
 body {
   margin: 0;
   padding:  0;
@@ -10,12 +11,15 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+
 
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}

@@ -1,6 +1,7 @@
 
 .full-width {
   width:  100%;
+  margin: 20px;
 }
 .half-width {
   width : 50%
@@ -9,4 +10,20 @@
 .half-width span {
   font-size: 25px;
   padding: 0 30px;
+}
+
+.list-document {
+  list-style: none;
+  
+}
+
+.list-document li {
+  height : 50px; 
+  width: inherit;
+}
+
+.list-document li active{
+  height : 50px; 
+  width: inherit;
+  background:  gray;
 }

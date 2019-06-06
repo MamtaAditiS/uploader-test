@@ -34,23 +34,24 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="col-12 main">
-        <div className="col-4">
+      <div className="full-width">
+        <div className="doc-sidebar">
           <SideBar
             openModal={this.openModal}
             closeModal={this.closeModal}
             saveDocument={this.saveDocument}
             files={this.state.files}
             getFileIndex={this.getFileIndex}
+            selected={this.state.fileIndex}
           />
         </div>
-        <div className="col-8">
+        <div className="doc-view">
           {this.state.files.length > 0 ?
             <div className="document-window">
               <img src={this.state.files[this.state.fileIndex].preview} alt="No Image" />
             </div> : null}
         </div>
-      </div>
+      </div >
     );
   }
 
