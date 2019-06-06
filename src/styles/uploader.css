@@ -4,6 +4,7 @@
     margin-left:0px;
     padding-left:0px;
     display: inline-block;
+
 }
 
 .sidebar p {
@@ -20,5 +21,10 @@
 }
 
 .file-upload-block{
-    
+        
 }
+
+.custom-width {
+    width:  30%;
+}
+
